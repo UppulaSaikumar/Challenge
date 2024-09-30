@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Inventory</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <p>Chemical Supplies</p>
+            <button id="addButton" class="action-button">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button id="deleteButton" class="action-button">
+                <i class="fas fa-trash"></i>
+            </button>
+            <button id="refreshButton" class="action-button">
+                <i class="fas fa-save"></i>
+            </button>
+        </div>
+        
+        <table id="chemicalTable">
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th data-column="id" data-order="asc">ID</th>
+                    <th data-column="chemicalName" data-order="asc">Chemical Name</th>
+                    <th data-column="vendor" data-order="asc">Vendor</th>
+                    <th data-column="density" data-order="asc">Density (g/m³)</th>
+                    <th data-column="viscosity" data-order="asc">Viscosity (m²/s)</th>
+                    <th data-column="packaging" data-order="asc">Packaging</th>
+                    <th data-column="packSize" data-order="asc">Pack Size</th>
+                    <th data-column="unit" data-order="asc">Unit</th>
+                    <th data-column="quantity" data-order="asc">Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
